@@ -50,8 +50,8 @@ public class Main {
         double monthlyRate = 0.01;
 
         for (int i = 1; i <= 12; i++) {
-            totalSavings += monthlySavings;
             totalSavings += totalSavings * monthlyRate;
+            totalSavings += monthlySavings;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + totalSavings + " рублей");
         }
 
